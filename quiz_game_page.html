@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Quiz Game!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="quiz_game.css">
+
+    </head>
+    <body>
+
+        <h4 id="p1_login"></h4> <span id="player1_score"></span>
+                <br>
+                <h4 id="p2_login"></h4> <span id="player2_score"></span>
+
+        <div class="container">
+            <center>
+                <h2 style="color: white;">The Math Quiz Game!</h2>
+                <br>
+                <h3 id="question" style="color: white;">Question Turn -</h3>
+                <h3 id="answer" style="color:white;">Answer Turn - </h3>
+                <div id="output" class="col-lg-6">
+                <br>
+                <br>
+               <h3 id="math_question"></h3>
+               <label>Answer: </label>
+               <input type="text" id="number" class="form-control" placeholder="product">
+               <br>
+               <button onclick="send()" class="btn btn-success" style="width: 30%;">Check</button>
+            </div>
+
+            <div id="things">
+            <br>
+            <label id="number1" style="color: white;">Number 1</label>
+            <input type="text" id="num1" class="form-control" placeholder="Number 1">
+            <br>
+            <label id="number2" style="color: white;">Number 2</label> 
+            <input type="text" id="num2" class="form-control" placeholder="Number 2">
+            <br>
+            <button onclick="send()" class="btn btn-success" style="width: 30%;">Send</button>
+        </div>
+        </center>
+        </div>
+        <script src="quiz_game_page.js"></script>
+    </body>
+</html>
